@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../font/Cocogoose-Pro-Light-Trial.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../font/Cocogoose-Pro-Regular-Trial.ttf');
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  background: #000000;
+  color: #fffdfd;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 1.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border: 1.5px solid #000;
+  border-radius: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fffdfd;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Contact-Us Header */
+.header-contact {
+  position: relative;
+}
+
+.header-contact .header-contact-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.header-contact .header-contact-content .header-contact-item-2 {
+  margin-top: 5rem;
+  flex: 1;
+  position: relative;
+}
+
+.header-contact .header-contact-content .header-contact-item-2 h1 {
+  font-family: 'Cocogoose';
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 8.5rem;
+  text-align: right;
+  color: #fffdfd;
+  padding: 1.5rem 0rem;
+}
+
+.header-contact .header-contact-content .header-contact-item-2 .both-content {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  .left-content {
+  width: 30rem;
+  padding: 0 2rem;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  .left-content
+  p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  color: #e5e5e5;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form {
+  flex: 1;
+  margin-left: 2.5rem;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control {
+  margin-top: 2.5rem;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control
+  input,
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control
+  textarea {
+  background: transparent;
+  width: 100%;
+  padding: 0.85rem;
+  font-family: 'Cocogoose';
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a4a2a2;
+  border: 0;
+  border-bottom: 1px solid #a4a2a2;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control
+  input::placeholder,
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control
+  textarea::placeholder {
+  font-family: 'Cocogoose';
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.7rem;
+  color: #a4a2a2;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control
+  textarea {
+  height: 20rem;
+}
+
+/* ---------------Select Custom Styling--------------- */
+
+/* .header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control
+  #tours {
+  background: transparent;
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fffdfd;
+  border: 0;
+  border-bottom: 1px solid #a4a2a2;
+} */
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control.custom-select {
+  position: relative;
+}
+
+.header-contact
+  .header-contact-content
+  .header-contact-item-2
+  .both-content
+  form
+  .form-control.custom-select
+  select {
+  display: none;
+}
+
+.select-selected {
+  background: transparent;
+  width: 100%;
+  padding: 0.85rem;
+  font-family: 'Cocogoose';
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a4a2a2;
+  border: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #a4a2a2;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: '';
+  top: 14px;
+  left: 195px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #a4a2a2 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #a4a2a2 transparent;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  background: transparent;
+  padding: 1rem 0.85rem;
+  border-bottom: 1px solid #a4a2a2;
+  cursor: pointer;
+  font-family: 'Cocogoose';
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a4a2a2;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #222;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.send-btn {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.send-btn a {
+  font-family: 'Cocogoose';
+  font-size: 1.5rem;
+  line-height: 3.7rem;
+  font-weight: 400;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  text-decoration: underline;
+}

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Cocogoose';
@@ -39,7 +40,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 1.25rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -143,7 +144,7 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 900;
   position: absolute;
   top: 50%;
@@ -165,7 +166,7 @@ a {
 }
 
 .header .header-content .header-item-1 {
-  width: 40rem;
+  width: 39rem;
   align-self: flex-end;
 }
 
@@ -179,7 +180,6 @@ a {
 
 .header .header-content .header-item-2 {
   align-self: flex-end;
-  width: 50rem;
 }
 
 .header .header-content .header-item-2 img {
@@ -187,16 +187,17 @@ a {
   width: 16rem;
   height: 18.8rem;
   margin-bottom: -0.85rem;
+  margin-right: 0.5rem;
 }
 
 .header .header-content .header-item-2 img:nth-child(2) {
   width: 16.8rem;
-  height: 18.8rem;
+  height: 16.8rem;
+  align-self: flex-end;
 }
 
 .header .header-content .header-item-3 {
   align-self: flex-end;
-  width: 40rem;
   text-align: right;
   line-height: 0;
 }
@@ -287,4 +288,479 @@ a {
 
 .food-tour .city-food-tour .city-food-tour-item > h2 a {
   text-decoration: underline;
+}
+
+/* Reviews Section */
+
+.reviews-section {
+  margin: 5rem 0rem;
+}
+
+.reviews-section .reviews {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 0.35fr 1fr;
+  place-items: center;
+}
+
+.reviews-section .reviews .reviews-content {
+  grid-column: 1/3;
+}
+
+.reviews-section .reviews .reviews-main {
+  width: 65rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.left-review-content {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 25rem;
+  justify-self: center;
+  margin-top: -5rem;
+}
+
+.left-review-content .left-review-img img {
+  margin-bottom: -2rem;
+  margin-left: -1rem;
+}
+
+.left-review-content > p {
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.165em;
+}
+
+.review-content-center {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  justify-self: center;
+}
+
+.reviews-section .reviews .reviews-main .review-ratings {
+  padding-bottom: 0.8rem;
+}
+
+.reviews-section .reviews .reviews-main p {
+  font-family: 'Cocogoose';
+  font-size: 3rem;
+  line-height: 2.9rem;
+  font-weight: 400;
+  padding: 0 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.reviews-section .reviews .reviews-main h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 0 0.5rem;
+  letter-spacing: 0.165em;
+}
+
+/* World-Map-Location */
+.world-map {
+  margin: 5rem 0rem;
+}
+
+.world-map .world-map-content {
+  padding: 0 2rem;
+}
+
+.world-map .world-map-content img {
+  max-width: 100%;
+}
+
+.world-map .tour-guides {
+  padding: 0 2rem;
+}
+
+.world-map .tour-guides.flex-space {
+  justify-content: space-around;
+}
+
+.world-map .tour-guides .tour-guides-item-1 {
+  width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.world-map .tour-guides .tour-guides-item-1 .tour-guid-info {
+  width: 25rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.world-map .tour-guides .tour-guides-item-1 .tour-guid-info img {
+  width: 5.4rem;
+  height: 8.2rem;
+  margin-bottom: -1.5rem;
+  margin-left: -1rem;
+}
+
+.world-map .tour-guides .tour-guides-item-1 .tour-guid-info p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.165em;
+}
+
+.world-map .tour-guides .tour-guides-item-2 {
+  width: 46.5rem;
+  padding: 1.2rem;
+}
+
+.world-map .tour-guides .tour-guides-item-2 h1 {
+  font-family: 'Cocogoose';
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+.world-map .tour-guides .tour-guides-item-2 p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2rem;
+  width: 25rem;
+}
+
+/* Chef-Tour-Section */
+.chefs-tv {
+  margin: 5rem 0rem;
+}
+
+.chefs-tv h2 {
+  font-family: 'Cocogoose';
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 2.9rem;
+  color: #fffdfd;
+  padding: 2rem;
+}
+
+.chefs-tv .chefs-tv-img {
+  position: relative;
+}
+
+.chefs-tv .chefs-tv-img img {
+  max-width: 100%;
+}
+
+.chefs-tv .chefs-tv-img .chefs-tv-img-content {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chefs-tv .chefs-tv-img .chefs-tv-img-content img {
+  width: 5rem;
+  height: 4.7rem;
+}
+
+.chefs-tv .chefs-tv-img .chefs-tv-img-content p {
+  width: 23.5rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.165em;
+  color: #fffdfd;
+  margin-left: 2rem;
+}
+
+.chefs-tv .chef-tv-content {
+  margin-top: 3.5rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chefs-tv .chef-tv-content .card {
+  width: 29rem;
+  height: 28rem;
+}
+
+.chefs-tv .chef-tv-content .card-media {
+  position: relative;
+}
+
+.chefs-tv .chef-tv-content .card-media .play-btn img {
+  width: 2.5rem;
+  height: 2.4rem;
+}
+
+.chefs-tv .chef-tv-content .card-media .play-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.chefs-tv .chef-tv-content .card-body {
+  padding-top: 1.5rem;
+}
+
+.chefs-tv .chef-tv-content .card-body p {
+  width: 23.5rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.165em;
+  color: #fffdfd;
+}
+
+/* Food-Journal-Section */
+.food-journal {
+  margin: 5rem 0;
+}
+
+.food-journal > h2 {
+  font-family: 'Cocogoose';
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 2.9rem;
+  color: #fffdfd;
+  padding: 2rem;
+}
+
+.food-journal .food-journal-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.food-journal .food-journal-grid .food-journal-item:first-child {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.food-journal
+  .food-journal-grid
+  .food-journal-item:first-child
+  .card
+  .card-media
+  img {
+  width: 71.5rem;
+  height: 97rem;
+  max-width: 100%;
+}
+
+.food-journal
+  .food-journal-grid
+  .food-journal-item:first-child
+  .card
+  .card-body
+  h2 {
+  font-family: 'Cocogoose';
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  color: #fffdfd;
+  padding: 1.5rem 0rem;
+}
+
+.food-journal
+  .food-journal-grid
+  .food-journal-item:last-child
+  .card
+  .card-body
+  h2 {
+  font-family: 'Cocogoose';
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  color: #fffdfd;
+  padding: 1.5rem 0rem;
+}
+
+.food-journal .food-journal-grid .food-journal-item:last-child {
+  grid-row: 2/4;
+  grid-column: 4/6;
+}
+
+.food-journal
+  .food-journal-grid
+  .food-journal-item:last-child
+  .card
+  .card-media
+  img {
+  width: 71.5rem;
+  height: 97rem;
+  max-width: 100%;
+}
+
+.food-journal .food-journal-grid .food-journal-item .card .card-media img {
+  width: 34rem;
+  height: 39rem;
+  max-width: 100%;
+}
+
+.food-journal .food-journal-grid .food-journal-item .card .card-body h4 {
+  font-family: 'Cocogoose';
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: #fffdfd;
+  padding: 0.85rem 0rem;
+}
+
+.food-journal .food-journal-grid .food-journal-item .card .card-body p {
+  font-family: 'Cocogoose';
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #fffdfd;
+  padding: 0.5rem 0rem;
+}
+
+.food-journal .food-journal-grid .food-journal-item .card .card-body p span {
+  font-family: 'Cocogoose';
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #fffdfd;
+}
+
+/* Footer-Section */
+.footer {
+  margin-top: 5rem;
+  padding: 2.5rem 2rem;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-content .footer-item-0 {
+  width: 22rem;
+}
+
+.footer .footer-content .footer-item-0 > img {
+  width: 21.5rem;
+  height: 17rem;
+}
+
+.footer .footer-content .footer-item-0 p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 00.165em;
+}
+
+.footer .footer-content .footer-item-0 .social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.footer .footer-content .footer-item-4 {
+  width: 32rem;
+  position: relative;
+}
+
+.footer .footer-content .footer-item-4 .form-control input {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: transparent;
+  border: 0.5px solid #fffdfd;
+  height: 3rem;
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  color: #fffdfd;
+}
+
+.footer .footer-content .footer-item-4 .form-control input::placeholder {
+  font-family: 'Cocogoose';
+  color: #fffdfd;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.footer .footer-content .footer-item-4 .footer-item-content {
+  padding-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-content .footer-item-4 .footer-image {
+  position: absolute;
+  bottom: -4rem;
+  right: 0;
+}
+
+.footer .footer-content .footer-item-4 .footer-image img {
+}
+
+.footer .footer-content .footer-item-4 .footer-item-content > p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #fffdfd;
+  width: 22rem;
+}
+
+.footer .footer-content .footer-item-4 .footer-item-content .submit-btn {
+  font-family: 'Cocogoose';
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #fffdfd;
+}
+
+.footer .footer-content .footer-item-3 {
+  width: 26.5rem;
+}
+
+.footer .footer-content .footer-item-3 h3 {
+  font-family: 'Cocogoose';
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #fffdfd;
+}
+
+.footer .footer-content .footer-item-2 {
+  width: 30rem;
+}
+
+.footer .footer-content .footer-item-2 .footer-menu li {
+  font-family: 'Mulish';
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.7rem;
+}
+
+.footer .footer-content .footer-item-1 {
+  width: 30rem;
+}
+
+.footer .footer-content .footer-item-1 .footer-menu li {
+  font-family: 'Mulish';
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.7rem;
+}
+
+.footer .footer-content .footer-item-1 .footer-menu .all-tours {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
 }
